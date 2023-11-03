@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 20px;
+}
+
+
+/* Grid Code */
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   margin: 10px;
+
+}
+
+.container > * {
+    background-color: coral;
+    border: 5px solid #a04f32;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.container > div {
+    background-color: rgb(255, 243, 80);
+    border: 5px solid rgb(189, 180, 59);;
+}
+
+.define {
+    grid-column: 1 / span 2;
+}
+
+.ideate {
+    grid-column: 2 / 4;
+}
+
+.sketching {
+    grid-column: 2 / span 3;
+}
+
+.prototype {
+    grid-column: 4 / -1;
+}
